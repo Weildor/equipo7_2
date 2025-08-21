@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Presentación de Naruto Uzumaki</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #f5a623, #f76b1c);
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .container {
+    background: #fff;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .image {
+    flex: 1 1 350px;
+    background: url('https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png') center/contain no-repeat;
+    min-height: 400px;
+    filter: drop-shadow(0 0 10px #f76b1c);
+  }
+
+  .content {
+    flex: 1 1 500px;
+    padding: 40px 50px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin: 0 0 10px;
+    color: #f76b1c;
+    text-shadow: 0 0 10px #f76b1c;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #555;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .btn-back {
+    margin-top: 25px;
+    background-color: #f76b1c;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(247,107,28,0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+  }
+
+  .btn-back:hover,
+  .btn-back:focus {
+    background-color: #d95a00;
+    box-shadow: 0 6px 14px rgba(217,90,0,0.8);
+    outline: none;
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+    }
+    .image, .content {
+      flex: 1 1 100%;
+      min-height: 300px;
+      padding: 20px;
+    }
+    .btn-back {
+      align-self: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="image" role="img" aria-label="Imagen de Naruto Uzumaki"></div>
+    <div class="content">
+      <h1>Naruto Uzumaki</h1>
+      <h2>"¡Seré Hokage y traeré la paz a la aldea!"</h2>
+      <p>
+        Naruto Uzumaki es un ninja del manga y anime "Naruto". Su sueño es convertirse en Hokage, el líder de su aldea, y ser reconocido por todos. Posee el espíritu fuerte y el poder del Zorro de Nueve Colas sellado en su interior.
+      </p>
+      <p>
+        A lo largo de su viaje, Naruto demuestra que la perseverancia, la amistad y la voluntad inquebrantable pueden superar cualquier obstáculo, convirtiéndose en un símbolo de esperanza para su mundo.
+      </p>
+      <button class="btn-back" onclick="location.href='index.html'">← Regresar al Menú</button>
+    </div>
+  </div>
+</body>
+</html>
