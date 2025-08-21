@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipo 7 - Desarrollo Web Ninja</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    main h2 {
+      color: #2c3e50;
+    }
+
+    .ninja-bg {
+      background-image: url('https://wallpapercave.com/wp/wp8449963.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 40px 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .curriculum {
+      background-image: url('https://i.pinimg.com/originals/28/83/f9/2883f9d990ad51b66baf230aef00ed42.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      align-items: center;
+    }
+
+    .foto-curriculum {
+      max-width: 200px;
+      border-radius: 10px;
+      margin-right: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+
+    .curriculum-info {
+      flex: 1;
+    }
+
+    .curriculum-info h3 {
+      margin-top: 0;
+      color: #ffe;
+    }
+
+    .curriculum ul {
+      padding-left: 20px;
+    }
+
+    .btn-regresar {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #2c3e50;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .btn-regresar:hover {
+      background-color: #1a2733;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Equipo 7</h1>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Sasuke</a>
+    <a href="#">Sakura</a>
+    <a href="#">Naruto</a>
+  </nav>
+
+  <section class="ninja-bg">
+    <h2>Desarrolladores Ninja del Equipo 7</h2>
+    <p>El Equipo 7 está conformado por ninjas altamente capacitados en el arte del desarrollo web...</p>
+    <ul>
+      <li><strong>Naruto Uzumaki</strong>: Especialista en interfaces de usuario...</li>
+      <li><strong>Sasuke Uchiha</strong>: Back-end developer...</li>
+      <li><strong>Sakura Haruno</strong>: Líder en optimización...</li>
+    </ul>
+    <p>Juntos, crean experiencias web dignas del título de Hokage del desarrollo.</p>
+  </section>
+
+  <!-- CURRÍCULUM DE SAKURA -->
+  <section class="curriculum">
+    <img src="IDEGARDE.jpg" alt="Foto de Sakura Haruno" class="foto-curriculum" />
+    <div class="curriculum-info">
+      <h3>Sakura Haruno</h3>
+      <p><strong>Posición:</strong> Aprendiz de Desarrolladora Web</p>
+      <p><strong>Email:</strong> sakura.dev@konoha.com</p>
+      <p><strong>Teléfono:</strong> +81 555 123 456</p>
+      <p><strong>Ubicación:</strong> Aldea Oculta de la Hoja (Konoha)</p>
+
+      <h4>Sobre mí</h4>
+      <p>Soy una ninja con gran pasión por la tecnología y el desarrollo web. Actualmente estoy aprendiendo HTML, CSS y JavaScript, y me esfuerzo por mejorar cada día. Trabajo en equipo, tengo gran atención al detalle y mucha fuerza de voluntad.</p>
+
+      <h4>Habilidades</h4>
+      <ul>
+        <li>HTML5 y CSS3 (en aprendizaje)</li>
+        <li>Diseño responsivo</li>
+        <li>Trabajo en equipo</li>
+        <li>Organización y liderazgo</li>
+      </ul>
+
+      <h4>Educación</h4>
+      <p>Academia Ninja de Konoha – Curso intensivo de Desarrollo Web</p>
+    </div>
+  </section>
+
+  <!-- Botón para regresar al inicio -->
+  <div style="text-align:center;">
+    <a href="index.html" class="btn-regresar">← Regresar al Inicio</a>
+  </div>
+
+  <footer>
+    © 2025 Equipo 7 - Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
